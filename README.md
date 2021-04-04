@@ -26,3 +26,6 @@ https://www.raspberrypi-spy.co.uk/2021/01/pi-pico-pinout-and-power-pins/
 
 
 
+![image info](./client/pico-led1.png)
+
+![image info](./client/gui.png)
