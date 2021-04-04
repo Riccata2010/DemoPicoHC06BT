@@ -39,10 +39,11 @@ void test_led();
 
 void my_fun_on_receive()
 {
-    while (uart_is_readable(UART_ID))
-    {
-        const char READ = uart_getc(UART_ID);
-    	led(READ - 36, led_flag[READ - 49] = !led_flag[READ - 49]);
+	while (uart_is_readable(UART_ID))
+	{
+		const char READ = uart_getc(UART_ID);
+		
+		led(READ - 36, led_flag[READ - 49] = !led_flag[READ - 49]);
 	}
 }
 
@@ -123,17 +124,17 @@ void init_uart()
     irq_set_exclusive_handler(irq, my_fun_on_receive);
     irq_set_enabled(irq, true);
     uart_set_irq_enables(UART_ID, true, false);
-
-	show_led_ready_on_pico();
+    
+    show_led_ready_on_pico();
     printf("READY\n");
 }
 
 int main()
 {
-    stdio_init_all();
+	stdio_init_all();
 	init_led();
 	test_led();
-    init_uart();
+	init_uart();
 
     while (1)
     {
