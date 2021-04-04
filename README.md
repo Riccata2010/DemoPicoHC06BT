@@ -13,7 +13,7 @@ To connect, use the command:
 
 To turn on led 1, use the command:
 
-### echo 1 | sudo picocom -qri / dev / rfcomm0
+### echo 1 | sudo picocom -qri /dev/rfcomm0
 
 Useful links list:
 
