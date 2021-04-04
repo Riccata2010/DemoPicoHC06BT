@@ -18,8 +18,11 @@ To turn on led 1, use the command:
 Useful links list:
 
 https://datasheets.raspberrypi.org/pico/pico-datasheet.pdf
+
 https://www.raspberrypi.org/documentation/rp2040/getting-started/
+
 https://www.raspberrypi-spy.co.uk/2021/01/pi-pico-pinout-and-power-pins/
+
 
 
 
